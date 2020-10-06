@@ -1,0 +1,39 @@
+﻿<Window x:Name="mainwin" x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="1000"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="White"
+        ResizeMode="CanResizeWithGrip" MouseLeftButtonDown="DragMove" KeyUp="mainwin_KeyUp" >
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1000"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="X" Click="Button_Click" Width="20" Height="20" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Right"/>
+            <Button Content="Add" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click_AddNumber" Margin="0,0,70,0"/>
+            <Button Content="Clear" VerticalAlignment="Top" Click="Button_Click_Clear" HorizontalAlignment="Right" Margin="0,0,25,0" Width="40" Height="20"/>
+            <TextBox x:Name="newNumber" HorizontalAlignment="Left" Margin="906,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+            <Label x:Name="label" Content="Geen nummer" HorizontalAlignment="Left" Margin="906,-30,0,0" VerticalAlignment="Center" Width="85" Visibility="Hidden" Foreground="#FFFF0000"/>
+            <Button Content="toggle backgr..." HorizontalAlignment="Left" Margin="906,106,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+            <Button Content="remove last" HorizontalAlignment="Left" Margin="908,75,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_2"/>
+        </Grid>
+
+        <Grid x:Name="Grid" HorizontalAlignment="Stretch" Width="1001">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1000"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </Grid>
+</Window>
