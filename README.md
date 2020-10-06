@@ -1,5 +1,6 @@
 # bingo
 OBS Bingo application
+![Bingo](https://github.com/WilcoHendriksen/bingo/bingo.png)
 
 ## goal
 Just a small app that was needed for someone to use with OBS studio during the corona pandemic. They used it to broadcast a bingo event for there village.
