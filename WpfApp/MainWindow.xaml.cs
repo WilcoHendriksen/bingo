@@ -43,14 +43,14 @@ namespace WpfApp
     {
       var border = new Border
       {
-        Margin = new Thickness(CalculateMarginLeft(bingoNumber.Position), 0 ,0 ,0),
+        Margin = new Thickness(0,CalculateMarginTop(bingoNumber.Position) ,0 ,0),
         Height = 100,
         Width = 100,
         BorderThickness = new Thickness(10),
         BorderBrush = bingoNumber.Position == 0 ? Brushes.Red : Brushes.Green,
         Background = Brushes.Transparent,
         CornerRadius = new CornerRadius(50),
-        HorizontalAlignment = HorizontalAlignment.Left,
+        VerticalAlignment = VerticalAlignment.Top,
         Child = new TextBlock
         {
           Text = bingoNumber.Number.ToString(),
@@ -73,7 +73,7 @@ namespace WpfApp
       }
     }
 
-    private double CalculateMarginLeft(int position)
+    private double CalculateMarginTop(int position)
     {
       switch (position)
       {
