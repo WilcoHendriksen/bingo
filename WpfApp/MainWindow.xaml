@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1000" Width="150"
+        Title="MainWindow" Height="800" Width="150"
         AllowsTransparency="True"
         WindowStyle="None"
         Background="White"
         ResizeMode="CanResizeWithGrip" MouseLeftButtonDown="DragMove" KeyUp="mainwin_KeyUp">
-    <Grid Height="1000" VerticalAlignment="Bottom">
-        <Grid Height="1000" VerticalAlignment="Bottom">
+    <Grid Height="800" VerticalAlignment="Bottom">
+        <Grid Height="800" VerticalAlignment="Bottom">
             <Grid.RowDefinitions>
-                <RowDefinition Height="1000" />
+                <RowDefinition Height="800" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150" />
@@ -31,7 +31,7 @@
 
         <Grid x:Name="Grid" Width="150" VerticalAlignment="Top" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="1000" />
+                <RowDefinition Height="800" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150" />

@@ -87,8 +87,6 @@ namespace WpfApp
           return 400;
         case 4:
           return 525;
-        case 5:
-          return 650;
         default:
           return 25;
       }
@@ -108,13 +106,8 @@ namespace WpfApp
     private void Refresh()
     {
       Grid.Children.Clear();
-
-      var lastSix = BingoNumbers.TakeLast(6);
-      List<BingoNumber> reversedList = new List<BingoNumber>(lastSix);
-      reversedList.Reverse();
-
       int i = 0;
-      foreach (var bingoNumber in reversedList)
+      foreach(var bingoNumber in BingoNumbers.TakeLast(5).Reverse())
       {
         bingoNumber.Position = i;
         BuildNumber(bingoNumber);
